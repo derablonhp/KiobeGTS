@@ -63,9 +63,6 @@ jobs:
         path: ${{ steps.pip-cache.outputs.dir }}
         key: ${{ runner.os }}-pip-${{ hashFiles('**/setup.py') }}
         restore-keys: |
-          ${{ runner.os }}-pip-
-
-# Omitted checking out blocks and plots repo Chia-Network/test-cache
 
     - name: Run install script
       env:
